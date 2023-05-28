@@ -1,12 +1,14 @@
 compatibility_date = "2022-01-20"
-name = "rustwasm-markdown-parser"
+name = "rustwasm-hello-world"
 main = "build/worker/shim.mjs"
 workers_dev = true
 send_metrics = false
-
-[vars]
-WORKERS_RS_VERSION = "0.0.16"
+analytics_engine_datasets = [
+    { binding = "rustwasm-hello-world" }
+]
 
 [build]
 command = "cargo install -q worker-build && worker-build --release" # required
 
+[placement]
+mode = "smart"
