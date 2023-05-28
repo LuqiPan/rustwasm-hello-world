@@ -1,5 +1,5 @@
 [package]
-name = "rustwasm-markdown-parser"
+name = "rustwasm-hello-world"
 version = "0.1.0"
 authors = ["Luqi Pan"]
 edition = "2018"
